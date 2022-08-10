@@ -10,10 +10,10 @@ class PlacesListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Meus Lugares'),
+        title: const Text('Meus Lugares'),
         actions: [
           IconButton(
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
             onPressed: () {
               Navigator.of(context).pushNamed(AppRoutes.placeForm);
             },
@@ -39,7 +39,16 @@ class PlacesListScreen extends StatelessWidget {
                               ),
                             ),
                             title: Text(greatPlaces.itemByIndex(index).title),
-                            onTap: () {},
+                            subtitle: Text(greatPlaces
+                                .itemByIndex(index)
+                                .location
+                                .address!),
+                            onTap: () {
+                              Navigator.of(context).pushNamed(
+                                AppRoutes.placeDetail,
+                                arguments: greatPlaces.itemByIndex(index),
+                              );
+                            },
                           );
                         },
                       ),
