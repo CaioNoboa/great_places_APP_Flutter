@@ -4,3 +4,5 @@
 
 ![First Screen](https://github.com/CaioNoboa/great_places_APP_Flutter/blob/main/great_places/assets/image/great_places.jpg)
 ### Figura 1. Tela inicial, sem nenhum lugar cadastrado (A). Ao selecionarmos o ícone '+', seremos direcionados para uma página de cadastramento do lugar (B). Podemos adicionar título, foto e localização, sendo o local atual do usuário ou lugar específico selecionado no mapa (C). Tela inicial, com um lugar cadastrado (D). Cadastro de novos lugares (E, F). Ao selecionarmos um local já cadastrado seremos direcionados para uma página de detalhamento deste local (G) e podemos vê-lo no mapa (H).
+
+#### Este aplicado foi construído baseado no curso "Aprenda Flutter e Desenvolva Apps Para Android e IOS 2022" da Cod3r Cursos Online (https://www.udemy.com/course/curso-flutter/).
